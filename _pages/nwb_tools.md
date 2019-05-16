@@ -21,13 +21,20 @@ MEG, EEG, fNIRS, ECoG, depth electrodes and animal invasive neurophysiology buil
 data format for importing ECoG and invasive electrophysiology data. The application povides a graphical interface for a preprocessing pipeline, including spike sorting using WavClus, UltraMegaSort2000, KiloSort or Klusters, a large large suite of LFP analyses, data visualization, and interactive 3D rendering of brains.
 
 ## [NWBwidgets](https://github.com/NeurodataWithoutBorders/nwb-jupyter-widgets)
-NWBwidgets is a library for exploring an NWB file in a Jupyter notebook. This tool lets you travese the hierarchical structure of an NWB file and visualize the data from each of the NWB elements within the file.
-
+<html>
+  <table border="0">
+    <tr>
+      <td><img alt="EcogVis" src="https://drive.google.com/uc?export=download&id=1JtI2KtT8MielIMvvtgxRzFfBTdc41LiE" width="1000" class="center-block"></td>
+      <td>NWBwidgets is a library for exploring an NWB file in a Jupyter notebook. This tool lets you travese the hierarchical structure of an NWB file and visualize the data from each of the NWB elements within the file.</td>
+    </tr>
+  </table>
+</html>
+  
 ## [EcogVIS](https://github.com/luiztauffer/ecogVIS)
 <html>
   <table border="0">
 <tr>
-  <td><img alt="EcogVis" src="../images/EcogVIS_screenshot.png" width="550" class="center-block"></td>
+  <td><img alt="EcogVis" src="../images/EcogVIS_screenshot.png" width="1000" class="center-block"></td>
   <td>EcogVIS is a python based, timeseries visualizer for Electrocorticography (ECoG) signals stored in NWB files. EcogVIS makes it intuitive and simple to viualize ECoG signals from selected channels, brain regions, make annotations and mark intervals of interest. Signal processing and analysis tools will soon be added. <br></td>
 </tr>
   </table>
