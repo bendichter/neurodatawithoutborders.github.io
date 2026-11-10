@@ -25,3 +25,8 @@ module:
   mounts:
     - source: assets
       target: assets
+    # Also expose static images as assets so templates can resize them
+    # (see layouts/partials/essentials/img.html). They are still copied to
+    # the site as-is through the default static mount.
+    - source: static/images
+      target: assets/images
