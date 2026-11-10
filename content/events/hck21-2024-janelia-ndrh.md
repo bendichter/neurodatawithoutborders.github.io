@@ -17,7 +17,7 @@ organizers:
 # NeuroDataReHack 2024
 ## *Generate new insights from existing neurophysiology data through secondary analysis*
 
-[The DANDI Archive](http://dandiarchive.org) now has 199+ neurophysiology datasets in the [Neurodata Without Borders](http://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include high-value datasets, e.g. from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world.
+[The DANDI Archive](https://dandiarchive.org) now has 199+ neurophysiology datasets in the [Neurodata Without Borders](https://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include high-value datasets, e.g. from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world.
 
 In this workshop, we will teach attendees about the open neurophysiology datasets available on the DANDI Archive and train them on how to maximally utilize the archive and the NWB standard to incorporate existing data into their scientific workflows. Feedback from attendees will be used to improve the software and data standard to better enable reanalysis workflows.
 

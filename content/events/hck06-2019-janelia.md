@@ -45,8 +45,8 @@ The slides for the talks presented during the User Days are available [here.](ht
 
 Ben Dichter's electrophysiology tutorial (Day 1):
 
-* [python jupyter notebook](http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/NWB_tutorial_2019_python.html)
-* [matlab code](http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/NWB_tutorial_2019_matlab.html)
+* [python jupyter notebook](https://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/NWB_tutorial_2019_python.html)
+* [matlab code](https://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/NWB_tutorial_2019_matlab.html)
 
 Tom Davidson's 'early adopter experiences' talk (Day 1):
 

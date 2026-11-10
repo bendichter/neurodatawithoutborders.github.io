@@ -37,7 +37,7 @@ This hackathon event invited experts from the neuroscience community to explore 
 ## Slides and Materials
 
 - **Agenda** [[PDF]](https://drive.google.com/file/d/15epI5yUImoHcPYrsxSJQgR2d7AfLa52P/view?usp=sharing)
-- **Online Tutorials**, The online tutorials for PyNWB that were used and mentioned in the talks are available [here](http://pynwb.readthedocs.io/en/latest/tutorials/index.html)
+- **Online Tutorials**, The online tutorials for PyNWB that were used and mentioned in the talks are available [here](https://pynwb.readthedocs.io/en/latest/tutorials/index.html)
 - **Welcome to the NWB:N Hackathon @ LBNL**, Oliver Ruebel, 04/26/2018, 8am [[PDF]](https://drive.google.com/file/d/1cb3qJyMqlR8ZQGZaka4IU5z5WVYkQ1KD/view?usp=sharing)
 - **Neurodata Without Borders**, Kris Bouchard, 04/26/2018, 8:10am [[PDF]](https://drive.google.com/file/d/1FQg6fY-sPFAlPBd3HeUkG3uhfuvUsWz7/view?usp=sharing)
 - **Introduction to NWB:N -- An ecosystem for standardizing neurophysiology data**, Oliver Ruebel, 04/26/2018, 8:20am [[PDF]](https://drive.google.com/file/d/1SIcMshEl_e-0Gz6F3AVCs8s7osvhz1FS/view?usp=sharing)

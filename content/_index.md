@@ -16,7 +16,7 @@ card_section:
     - image: /images/github.png
       title: Users & Developers
       btn_text: Get Started
-      btn_link: "http://nwb-overview.readthedocs.io/"
+      btn_link: "https://nwb-overview.readthedocs.io/"
     - image: /images/question_mark.png
       title: Questions About NWB?
       btn_text: Ask Our Help Desk
@@ -24,7 +24,7 @@ card_section:
     - image: /images/community.png
       title: Connect with the Community
       btn_text: Join the Slack
-      btn_link: "https://nwb-users.slack.com/join/shared_invite/zt-9bsx3xdj-wtUILLNzM8a0mOV_RywS~Q#/shared-invite/email"
+      btn_link: "/slack/"
     - image: /images/mail.png
       title: Join Our Mailing List
       btn_text: Sign Up

@@ -18,7 +18,7 @@ sponsered_projects:
       image: /images/nwb_elife_fig1.jpg
     - title: "DANDI: Distributed Archives for Neurophysiology Data Integration"
       image: /images/dandi-logo-square_sw.png
-      content: "The National Institutes of Health, through project <a href='https://reporter.nih.gov/search/saUqMstUpUOyrCHz_4rakA/project-details/9795271'>1R24MH117295</a>, funded <a href='https://satra.cogitatum.org/'>Satrajit Ghosh</a> (Massachusetts Institute of Technology) and Yaroslav Halchenko (<a href='http://centerforopenneuroscience.org/'>Center for Open Neuroscience</a>) to create the DANDI archive for neurophysiology Data.
+      content: "The National Institutes of Health, through project <a href='https://reporter.nih.gov/search/saUqMstUpUOyrCHz_4rakA/project-details/9795271'>1R24MH117295</a>, funded <a href='https://satra.cogitatum.org/'>Satrajit Ghosh</a> (Massachusetts Institute of Technology) and Yaroslav Halchenko (<a href='https://centerforopenneuroscience.org/'>Center for Open Neuroscience</a>) to create the DANDI archive for neurophysiology Data.
       
     * Provides a cloud platform for versioned neurophysiology data storage for the purposes of collaboration, archiving, and preservation.
     
@@ -193,7 +193,7 @@ past_projects_section:
         reuse of neurophysiology data and analyses, enhancing discovery and
         reproducibility. This funding is part of the NIH’s BRAIN Initiative
         support to develop standards.(September 2018-May 2020). For updates on
-        this project see our <a href='http://www.nwb.org/progress-reports/'>Progress Reports page</a>.
+        this project see our <a href='https://nwb.org/progress-reports/'>Progress Reports page</a>.
     - image: /images/enabling_sharing_nwb.png
       title: Enabling Shared Analysis and Processing of Large Neurophysiology Data
       content: The National Institutes of Health, through project <a href='https://reporter.nih.gov/search/MrtOAMt7skGS5bbZADQBMQ/project-details/9409114'>1R44MH115731</a>, funded
