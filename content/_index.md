@@ -3,10 +3,32 @@ title: Home
 hero_section:
   enable: true
   slides:
-    - title: Neurodata Without Borders
-      subtitle: A data standard and software ecosystem for neurophysiology and behavioral data
-      btn_text: Read More
-      btn_link: "/about-nwb/"
+    - title: One open standard for neurophysiology data
+      subtitle: Neurodata Without Borders (NWB) is a data standard and software ecosystem for neurophysiology and behavioral data.
+      btn_text: Convert your data
+      btn_link: "/convert/"
+      btn2_text: Find NWB data
+      btn2_link: "/archives/"
+      link_text: What is NWB?
+      link_link: "/about-nwb/"
+stats_section:
+  enable: true
+  # Counts as of 2026-11-10. DANDI figures count public, non-empty dandisets
+  # whose assets summary lists the NWB data standard.
+  note: "Figures as of November 2026."
+  stats:
+    - value: "590+"
+      label: NWB datasets on DANDI
+      link: "https://dandiarchive.org/dandiset"
+    - value: "550+ TB"
+      label: of NWB data on DANDI
+      link: "https://dandiarchive.org/"
+    - value: "45+"
+      label: tools that read or write NWB
+      link: "/nwb-software/"
+    - value: "30"
+      label: extensions in the NDX Catalog
+      link: "https://nwb-extensions.github.io"
 banner_section:
   enable: true
   title: "<a href='/supporting-nwb/' style='color: #664d03; font-weight: 600;'>Learn how you can support NWB</a>"
@@ -41,7 +63,7 @@ portfolio_section:
     optical physiology experiments, and tracking and stimulus data. <br><br> The
     <a href='/team'>NWB team</a> consists of neuroscientists and software developers
     who recognize that adoption of a unified data format is an important step
-    toward breaking down the barriers to data sharing in neuroscience
+    toward breaking down the barriers to data sharing in neuroscience.
   logos:
     - logo: /images/portfolio-logo.png
     - logo: /images/incf.png
