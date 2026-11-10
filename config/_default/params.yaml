@@ -8,3 +8,16 @@ cta:
 # Footer
 footer_logo: "/images/colored-logo.png"
 copyright_text: "© Neurodata Without Borders - All Rights Reserved"
+
+# Analytics (cookieless, no consent banner needed). Leave `provider` empty to
+# disable. Scripts are only included in production builds.
+#   provider: "plausible"    -> set plausible_domain (and plausible_host if self-hosted)
+#   provider: "goatcounter"  -> set goatcounter_code (the <code>.goatcounter.com subdomain)
+analytics:
+  provider: ""
+  plausible_domain: "nwb.org"
+  plausible_host: ""
+  goatcounter_code: ""
+  # Ownership verification tokens from Google Search Console / Bing Webmaster Tools.
+  google_site_verification: ""
+  bing_site_verification: ""
