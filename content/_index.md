@@ -3,20 +3,66 @@ title: Home
 hero_section:
   enable: true
   slides:
-    - title: Neurodata Without Borders
-      subtitle: A data standard and software ecosystem for neurophysiology and behavioral data
-      btn_text: Read More
-      btn_link: "/about-nwb/"
+    - title: One open standard for neurophysiology data
+      subtitle: Neurodata Without Borders (NWB) is a data standard and software ecosystem for neurophysiology and behavioral data.
+      btn_text: Convert your data
+      btn_link: "/convert/"
+      btn2_text: Find NWB data
+      btn2_link: "/archives/"
+      link_text: What is NWB?
+      link_link: "/about-nwb/"
+stats_section:
+  enable: true
+  # Counts as of 2026-11-10. DANDI figures count public, non-empty dandisets
+  # whose assets summary lists the NWB data standard.
+  note: "Figures as of November 2026."
+  stats:
+    - value: "590+"
+      label: NWB datasets on DANDI
+      link: "https://dandiarchive.org/dandiset"
+    - value: "550+ TB"
+      label: of NWB data on DANDI
+      link: "https://dandiarchive.org/"
+    - value: "45+"
+      label: tools that read or write NWB
+      link: "/nwb-software/"
+    - value: "30"
+      label: extensions in the NDX Catalog
+      link: "https://nwb-extensions.github.io"
 banner_section:
   enable: true
   title: "<a href='/supporting-nwb/' style='color: #664d03; font-weight: 600;'>Learn how you can support NWB</a>"
+audience_section:
+  enable: true
+  title: I want to…
+  items:
+    - icon: arrow-repeat
+      title: Convert my lab's data
+      text: Turn recordings, behavior and metadata into NWB files with NeuroConv and NWB GUIDE.
+      cta: Start converting
+      link: /convert/
+    - icon: search
+      title: Analyze public data
+      text: Find and stream NWB datasets from DANDI and other archives, then explore them in Python or MATLAB.
+      cta: Find datasets
+      link: /archives/
+    - icon: code-slash
+      title: Build a tool on NWB
+      text: Read and write NWB from Python, MATLAB or C++, and extend the standard for new data types.
+      cta: See the software
+      link: /nwb-software/
+    - icon: mortarboard
+      title: Teach with NWB
+      text: Use open datasets, notebooks and course materials to teach neurophysiology data analysis.
+      cta: Teaching resources
+      link: /community/educators/
 card_section:
   enable: true
   cards:
     - image: /images/github.png
       title: Users & Developers
       btn_text: Get Started
-      btn_link: "http://nwb-overview.readthedocs.io/"
+      btn_link: "https://nwb-overview.readthedocs.io/"
     - image: /images/question_mark.png
       title: Questions About NWB?
       btn_text: Ask Our Help Desk
@@ -24,14 +70,15 @@ card_section:
     - image: /images/community.png
       title: Connect with the Community
       btn_text: Join the Slack
-      btn_link: "https://nwb-users.slack.com/join/shared_invite/zt-9bsx3xdj-wtUILLNzM8a0mOV_RywS~Q#/shared-invite/email"
+      btn_link: "/slack/"
     - image: /images/mail.png
       title: Join Our Mailing List
       btn_text: Sign Up
-      btn_link: "https://mailchi.mp/fe2a9bc55a1a/nwb-signup"
+      btn_link: "#newsletter"
 portfolio_section:
   enable: true
   image: /images/ai_img.jpg
+  image_alt: "Colorful traces of neural activity recorded across many channels"
   heading: Neurodata Without Borders
   paragraph: Neurodata Without Borders (NWB) is a data standard for
     neurophysiology, providing neuroscientists with a common standard to share,
@@ -41,10 +88,12 @@ portfolio_section:
     optical physiology experiments, and tracking and stimulus data. <br><br> The
     <a href='/team'>NWB team</a> consists of neuroscientists and software developers
     who recognize that adoption of a unified data format is an important step
-    toward breaking down the barriers to data sharing in neuroscience
+    toward breaking down the barriers to data sharing in neuroscience.
   logos:
     - logo: /images/portfolio-logo.png
+      name: "R&D 100 Award winner"
     - logo: /images/incf.png
+      name: "INCF endorsed standard"
 video_section:
   enable: true
   title: "Learn More About NWB"
@@ -52,28 +101,37 @@ video_section:
 
 news_section:
   enable: true
-  btn_text: See All New
-  btn_link: /news
+  # Number of most recent posts shown on the homepage; the rest are on /news/.
+  count: 3
+  btn_text: See All News
+  btn_link: /news/
 sponsers_section:
   enable: true
   logos:
     - image: /images/sponsor-allen-institute.png
+      name: "Allen Institute"
       link: "https://alleninstitute.org/"
     - image: /images/sponsor-hhmi.png
+      name: "Howard Hughes Medical Institute"
       link: "https://www.hhmi.org/"
     - image: /images/sponsor-kavli.png
+      name: "Kavli Foundation"
       link: "https://www.kavlifoundation.org/"
     - image: /images/sponsor-lbnl.png
+      name: "Lawrence Berkeley National Laboratory"
       link: "https://www.lbl.gov/"
     - image: /images/sponsor-mathworks.png
+      name: "MathWorks"
       link: "https://www.mathworks.com/"
     - image: /images/sponsor-simons-foundation.png
+      name: "Simons Foundation"
       link: "https://www.simonsfoundation.org/"
     - image: /images/sponsor-incf.png
+      name: "INCF"
       link: "https://www.incf.org/"
 cta_section:
   enable: true
-  heading: Join our mailing list to receive news and notices
-  btn_text: Register
+  heading: Get NWB news, releases and events in your inbox
+  btn_text: Subscribe
   btn_link: "https://mailchi.mp/fe2a9bc55a1a/nwb-signup"
 ---

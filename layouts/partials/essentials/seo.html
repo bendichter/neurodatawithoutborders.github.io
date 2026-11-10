@@ -1,0 +1,104 @@
+{{/*
+  Search and social metadata: description, canonical URL, RSS discovery,
+  Open Graph / Twitter cards, and JSON-LD structured data.
+
+  Per-page overrides (front matter):
+    description: "One or two sentences shown in search results and link previews."
+    image: "/images/some-banner.png"   (already used by news and events)
+  Site-wide defaults live in config/_default/params.yaml (description, og_image).
+*/}}
+
+{{- $fallback := site.Params.description -}}
+{{- if and .IsPage .Summary -}}{{- $fallback = .Summary -}}{{- end -}}
+{{- $description := .Description | default .Params.subtitle | default .Params.summary | default $fallback -}}
+{{- $description = $description | plainify | htmlUnescape | replaceRE `\s+` " " | replaceRE `^ +| +$` "" | truncate 200 -}}
+
+{{- $image := site.Params.og_image -}}
+{{- with .Params.image -}}{{- $image = . -}}{{- end -}}
+{{- $image = $image | absURL -}}
+
+{{- $title := site.Title -}}
+{{- if and .Title (not .IsHome) -}}{{- $title = .Title | plainify -}}{{- end -}}
+
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{ with site.Home.OutputFormats.Get "rss" -}}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }} news">
+{{ end -}}
+
+{{/* Open Graph */}}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:locale" content="en_US">
+{{ if and .IsPage (eq .Section "news") -}}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{ else -}}
+<meta property="og:type" content="website">
+{{ end -}}
+
+{{/* Twitter / X, also read by Bluesky, Slack and LinkedIn */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image }}">
+
+{{/* JSON-LD structured data */}}
+{{- $org := dict
+  "@type" "Organization"
+  "name" site.Title
+  "alternateName" "NWB"
+  "url" site.BaseURL
+  "logo" ("images/colored-logo.png" | absURL)
+  "sameAs" (site.Params.social_profiles | default slice)
+-}}
+{{- if .IsHome -}}
+  {{- $site := dict
+    "@context" "https://schema.org"
+    "@graph" (slice
+      $org
+      (dict
+        "@type" "WebSite"
+        "name" site.Title
+        "url" site.BaseURL
+        "description" $description
+      )
+    )
+  -}}
+<script type="application/ld+json">{{ $site | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "news") -}}
+  {{- $article := dict
+    "@context" "https://schema.org"
+    "@type" "NewsArticle"
+    "headline" $title
+    "description" $description
+    "image" (slice $image)
+    "datePublished" (.Date.Format "2006-01-02")
+    "dateModified" (.Lastmod.Format "2006-01-02")
+    "url" .Permalink
+    "author" $org
+    "publisher" $org
+  -}}
+<script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "events") -}}
+  {{- $event := dict
+    "@context" "https://schema.org"
+    "@type" "Event"
+    "name" $title
+    "description" $description
+    "image" (slice $image)
+    "startDate" (.Date.Format "2006-01-02")
+    "url" .Permalink
+    "organizer" $org
+  -}}
+  {{- with .Params.endDate -}}
+    {{- $event = merge $event (dict "endDate" (time.Format "2006-01-02" .)) -}}
+  {{- end -}}
+  {{- with .Params.location -}}
+    {{- $event = merge $event (dict "location" (dict "@type" "Place" "name" .)) -}}
+  {{- end -}}
+<script type="application/ld+json">{{ $event | jsonify | safeJS }}</script>
+{{- end -}}

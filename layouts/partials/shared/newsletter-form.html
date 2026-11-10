@@ -1,0 +1,31 @@
+{{/*
+  Newsletter signup. With site.Params.newsletter.form_action set, renders an
+  inline Mailchimp form (classic embed: EMAIL field + bot honeypot) that opens
+  Mailchimp's confirmation page in a new tab. Otherwise falls back to a button
+  linking to the hosted signup page.
+  Pass "variant" "footer" for the compact footer layout.
+*/}}
+{{- $n := site.Params.newsletter -}}
+{{- $footer := eq .variant "footer" -}}
+{{- $id := cond $footer "newsletter-email-footer" "newsletter-email" -}}
+{{- if $n.form_action -}}
+<form action="{{ $n.form_action }}" method="post" target="_blank" rel="noopener"
+  class="d-flex flex-column flex-sm-row gap-2 {{ if not $footer }}justify-content-sm-end{{ end }} w-100" style="max-width: 32rem;">
+  <label for="{{ $id }}" class="visually-hidden">Email address</label>
+  <input type="email" name="EMAIL" id="{{ $id }}" required autocomplete="email"
+    placeholder="you@lab.org" class="form-control {{ if not $footer }}form-control-lg{{ end }}">
+  {{/* Honeypot: real people never see or fill this field */}}
+  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+    <input type="text" name="{{ $n.honeypot }}" tabindex="-1" value="">
+  </div>
+  <button type="submit"
+    class="btn {{ if $footer }}btn-outline-light{{ else }}btn-main bg-second btn-lg px-4 text-white text-18 second border-second translate animate{{ end }} text-nowrap">
+    {{ $n.button_text | default "Subscribe" }}
+  </button>
+</form>
+{{- else -}}
+<a href="{{ $n.signup_url }}" target="_blank" rel="noopener"
+  class="btn {{ if $footer }}btn-outline-light{{ else }}btn-main bg-second btn-lg px-4 text-white text-18 second border-second translate animate{{ end }}">
+  {{ $n.button_text | default "Subscribe" }}
+</a>
+{{- end -}}

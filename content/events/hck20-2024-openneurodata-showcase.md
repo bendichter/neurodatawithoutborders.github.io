@@ -20,7 +20,7 @@ registration: "Register for the event [here](https://forms.gle/amPd4h5kN9BPLX4g7
 # Open Neurodata Showcase 2024
 ## *Meet the scientists who have publicly shared neurophysiology data*
 
-[The DANDI Archive](http://dandiarchive.org) now has 199+ neurophysiology datasets in the [Neurodata Without Borders](http://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include high-value datasets, e.g. from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world.
+[The DANDI Archive](https://dandiarchive.org) now has 199+ neurophysiology datasets in the [Neurodata Without Borders](https://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include high-value datasets, e.g. from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world.
 
 In this event, we organize a virtual poster session in the Gather platform to bring together data contributors and anyone interested in reusing existing neurophysiology data. This virtual event offers a unique opportunity for participants to engage in discussions, explore dandisets, and allows data contributors to showcase their projects.
 

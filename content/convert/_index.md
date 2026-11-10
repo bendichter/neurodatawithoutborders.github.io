@@ -91,4 +91,5 @@ choosing_tools:
         - item: "If you need more flexibility or are comfortable with Python, consider NeuroConv"
         - item: "For custom data formats, complex conversions, or when developing NWB extensions, use PyNWB or MatNWB."
     content: "Remember to consult the provided documentation and tutorials for detailed guidance on using each tool"
+description: "How to convert electrophysiology, optical physiology and behavior data to NWB with NeuroConv, NWB GUIDE, PyNWB and MatNWB."
 ---
