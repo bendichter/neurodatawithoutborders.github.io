@@ -50,7 +50,7 @@ This page provides example agenda templates for different types of NWB workshops
 
 - **Prerequisites / requirements:** None, this workshop is intended for people new to the NWB ecosystem.
 
-- **Previous examples:** [NWB and DANDI Workshop at University of Washington](http://nwb.org/events/workshop-2025-uwashington/), [NWB and DANDI Workshop at CoSyNe 2025](http://nwb.org/events/cosyne-2025/), [NWB and DANDI Workshop at UNAM](http://nwb.org/events/workshop-2025-unam/)
+- **Previous examples:** [NWB and DANDI Workshop at University of Washington](https://nwb.org/events/workshop-2025-uwashington/), [NWB and DANDI Workshop at CoSyNe 2025](https://nwb.org/events/cosyne-2025/), [NWB and DANDI Workshop at UNAM](https://nwb.org/events/workshop-2025-unam/)
 
 ### Example Agenda
 
@@ -104,7 +104,7 @@ This page provides example agenda templates for different types of NWB workshops
 
 - **Prerequisites / requirements:** This is not a training event, so some level of familiarity with NWB is helpful though not required. 
 
-- **Previous examples:** [NWB Developer Hackathon 2024](http://nwb.org/events/hck18-2024-dev-hackathon-datajoint/), [Developer Days 2023](http://nwb.org/events/hck15-2023-janelia/), [Developer Days 2022](http://nwb.org/events/hck12-2022-remote/)
+- **Previous examples:** [NWB Developer Hackathon 2024](https://nwb.org/events/hck18-2024-dev-hackathon-datajoint/), [Developer Days 2023](https://nwb.org/events/hck15-2023-janelia/), [Developer Days 2022](https://nwb.org/events/hck12-2022-remote/)
 
 ### Example Agenda
 
@@ -326,7 +326,7 @@ The first day provides an overview of the hackathon and highlights planned break
 
 - **Prerequisites / requirements:** In previous workshops, we have required participants to propose a project with specific dandisets as part of their application. These projects can change throughout the course of the workshop.
 
-- **Previous examples:** [NeuroDataReHack 2024](http://nwb.org/events/hck21-2024-janelia-ndrh/), [NeuroDataReHack 2023](http://nwb.org/events/hck16-2023-granada-rh/), [NeuroDataReHack 2022](http://nwb.org/events/hck14-2022-seattle-rh/)
+- **Previous examples:** [NeuroDataReHack 2024](https://nwb.org/events/hck21-2024-janelia-ndrh/), [NeuroDataReHack 2023](https://nwb.org/events/hck16-2023-granada-rh/), [NeuroDataReHack 2022](https://nwb.org/events/hck14-2022-seattle-rh/)
 
 ### Example Agenda
 
@@ -555,7 +555,7 @@ discussion and feedback on the workshop and next steps.
    
 - **Prerequisites / requirements:** Data for conversion.
 
-- **Previous examples:** [NWB Data Conversion Workshop 2025](http://www.nwb.org/events/hck22-2025-dataconversion-remote/), [NWB Data Conversion Workshop 2024](http://www.nwb.org/events/hck19-2024-remote/), [NWB User Days 2023](http://www.nwb.org/events/hck15-2023-janelia/)
+- **Previous examples:** [NWB Data Conversion Workshop 2025](https://nwb.org/events/hck22-2025-dataconversion-remote/), [NWB Data Conversion Workshop 2024](https://nwb.org/events/hck19-2024-remote/), [NWB User Days 2023](https://nwb.org/events/hck15-2023-janelia/)
 
 ### Example Agenda
 

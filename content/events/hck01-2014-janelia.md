@@ -12,7 +12,7 @@ organizers:
   - "The Kavli Foundation"
 registration: "Registration is now closed."
 resources:
-  "Event Page": "http://crcns.org/NWB/hackathon-1"
+  "Event Page": "https://crcns.org/NWB/hackathon-1"
   "Agenda": "https://drive.google.com/file/d/1ob7cq_AViFXIznFZdJedW7EOXgUXzzbq/view?usp=drive_link"
   "Profiles": "https://drive.google.com/file/d/1sdIn44qOvQboLi8anpg8Vor_onCWvktP/view?usp=drive_link"
 ---

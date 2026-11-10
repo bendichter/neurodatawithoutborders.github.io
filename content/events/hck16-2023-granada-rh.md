@@ -18,7 +18,7 @@ organizers:
 # NeuroDataReHack 2023
 ## *Generate new insights from existing neurophysiology data through secondary analysis*
 
-[The DANDI Archive](http://dandiarchive.org) now has 110+ neurophysiology datasets in the [Neurodata Without Borders](http://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include high-value datasets, e.g. from The Allen Institute, the MICrONS project, and the International Brain Laboratory, as well as diverse contributions from neuroscience labs around the world. In this workshop, we taught attendees about the open neurophysiology datasets available on the DANDI Archive and trained them on how to maximally utilize the archive and the NWB standard to incorporate existing data into their scientific workflows.
+[The DANDI Archive](https://dandiarchive.org) now has 110+ neurophysiology datasets in the [Neurodata Without Borders](https://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include high-value datasets, e.g. from The Allen Institute, the MICrONS project, and the International Brain Laboratory, as well as diverse contributions from neuroscience labs around the world. In this workshop, we taught attendees about the open neurophysiology datasets available on the DANDI Archive and trained them on how to maximally utilize the archive and the NWB standard to incorporate existing data into their scientific workflows.
 
 Example projects included but were not limited to:
 * Determine whether your result is present in another species or brain area.
@@ -27,7 +27,7 @@ Example projects included but were not limited to:
 
 Following the event, participants were invited to apply for a Kavli Foundation Neurodata Discovery Award, which awards $50,000 (USD) of funding to continue data reanalysis projects that come out of the NeuroDataReHack event.
 
-This event was held as a satellite of the [IBRO World Congress 2023](http://ibro2023.org) with the goal of making it more accessible to diverse participants who might not otherwise have the opportunity to participate in this workshop.
+This event was held as a satellite of the [IBRO World Congress 2023](https://ibro2023.org) with the goal of making it more accessible to diverse participants who might not otherwise have the opportunity to participate in this workshop.
 
 ## Dates and Location
 

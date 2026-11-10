@@ -47,7 +47,7 @@ Bring your laptop to work along with the demonstration. To get familiar with NWB
 - **9:00 - 9:20**: How to read and explore an NWB file in Python and MATLAB
 - **9:20 - 9:50**: How to analyze NWB data using popular data processing and visualization tools
   - Using [SpikeInterface](https://github.com/SpikeInterface/spikeinterface#spikeinterface-a-unified-framework-for-spike-sorting) to sort raw extracellular electrophysiology recording data streamed from DANDI & write the output back to NWB
-  - Storing [DeepLabCut](http://www.mackenziemathislab.org/deeplabcut) and [SLEAP](https://sleap.ai/) pose estimation data in NWB
+  - Storing [DeepLabCut](https://www.mackenziemathislab.org/deeplabcut) and [SLEAP](https://sleap.ai/) pose estimation data in NWB
   - Using calcium imaging analysis tools, such as [CaImAn](https://github.com/flatironinstitute/CaImAn#caiman) and [suite2p](https://suite2p.readthedocs.io) to process and segment raw imaging data and write the output to NWB
 
 ## Survey

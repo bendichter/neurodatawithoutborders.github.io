@@ -52,7 +52,7 @@ resources:
 
 **Site chair:** [Jakob Voigt](https://www.voigtslab.org/people)
 
-**Program chair (User Days):**  [Oliver Rübel](https://crd.lbl.gov/divisions/scidata/mla/staff/oliver-ruebel/) and [Ben Dichter](http://bendichter.com/)
+**Program chair (User Days):**  [Oliver Rübel](https://crd.lbl.gov/divisions/scidata/mla/staff/oliver-ruebel/) and [Ben Dichter](https://bendichter.com/)
 
 **Program chair (Developer Days):** [Oliver Rübel](https://crd.lbl.gov/divisions/scidata/mla/staff/oliver-ruebel/) and [Ryan Ly](https://crd.lbl.gov/divisions/scidata/mla/staff/ryan-ly/)
 
