@@ -4,7 +4,7 @@ description: "An efficient method for 2D and 3D markerless pose estimation based
 category: "behavior-analysis"
 image: "/images/tools/deeplabcut/deeplabcut.gif"
 source_url: "https://github.com/DeepLabCut/DeepLabCut"
-docs_url: "http://www.mackenziemathislab.org/deeplabcut"
+docs_url: "https://www.mackenziemathislab.org/deeplabcut"
 weight: 190
 ---
 
@@ -32,4 +32,4 @@ While ndx-pose was developed initially to store the output of DeepLabCut in NWB,
 ## Resources
 
 * [Source](https://github.com/DeepLabCut/DeepLabCut)
-* [Docs](http://www.mackenziemathislab.org/deeplabcut)
+* [Docs](https://www.mackenziemathislab.org/deeplabcut)

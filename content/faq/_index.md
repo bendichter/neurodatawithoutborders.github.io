@@ -1,6 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 weight: 5
+description: "Answers to common questions about using NWB: stability, getting started, citing NWB, extensions, and how NWB compares to other standards."
 ---
 
 ## Using NWB
@@ -76,11 +77,11 @@ The NWB team strongly encourages that users do NOT package videos of natural beh
 
 ### What has changed between NWB 1 and 2?
 
-See the [release notes of the NWB format schema](http://nwb-schema.readthedocs.io/en/latest/format_release_notes.html) for details about changes to the format schema. For details about changes to the specification language see the specification language release notes. With regard to software, NWB 2 marks a full reboot and introduced with [PyNWB](https://pynwb.readthedocs.io/en/stable/), [MatNWB](https://matnwb.readthedocs.io/en/latest/), [HDMF docutils](https://github.com/hdmf-dev/hdmf-docutils/), [nwb-schema](https://nwb-schema.readthedocs.io/en/latest/) etc. several new packages and repositories while tools, e.g., [api-python](https://neurodatawithoutborders.github.io/api-python/build/html/api_usage.html), that were created for NWB:N 1.x have been deprecated.
+See the [release notes of the NWB format schema](https://nwb-schema.readthedocs.io/en/latest/format_release_notes.html) for details about changes to the format schema. For details about changes to the specification language see the specification language release notes. With regard to software, NWB 2 marks a full reboot and introduced with [PyNWB](https://pynwb.readthedocs.io/en/stable/), [MatNWB](https://matnwb.readthedocs.io/en/latest/), [HDMF docutils](https://github.com/hdmf-dev/hdmf-docutils/), [nwb-schema](https://nwb-schema.readthedocs.io/en/latest/) etc. several new packages and repositories while tools, e.g., [api-python](https://neurodatawithoutborders.github.io/api-python/build/html/api_usage.html), that were created for NWB:N 1.x have been deprecated.
 
 ### Does PyNWB support NWB:N 1.0.x files?
 
-[PyNWB](https://pynwb.readthedocs.io/en/stable/) includes the pynwb/legacy module which supports reading of NWB:N 1.0.x files from popular data repositories, such as the [Allen Cell Types Atlas](http://celltypes.brain-map.org/). For NWB:N 1.0.x files from other sources the millage may vary in particular when files are not fully format compliant, e.g., include arbitrary custom data or are missing required data fields.
+[PyNWB](https://pynwb.readthedocs.io/en/stable/) includes the pynwb/legacy module which supports reading of NWB:N 1.0.x files from popular data repositories, such as the [Allen Cell Types Atlas](https://celltypes.brain-map.org/). For NWB:N 1.0.x files from other sources the millage may vary in particular when files are not fully format compliant, e.g., include arbitrary custom data or are missing required data fields.
 
 ### What is the difference between NWB and NWB:N?
 
@@ -88,4 +89,4 @@ Neurodata Without Borders (NWB) started as a project by the Kavli Foundation wit
 
 ### What is the difference between PyNWB and api-python?
 
-[PyNWB](https://pynwb.readthedocs.io/en/stable/) is the Python reference read/write API for the current NWB 2.x format. [api-python](https://neurodatawithoutborders.github.io/api-python/build/html/api_usage.html) is a deprecated write-only API designed for NWB:N 1.0.x files. [PyNWB](https://pynwb.readthedocs.io/en/stable/) also provides support for reading some NWB:N 1.0.x files from popular data repositories, such as the [Allen Cell Types Atlas](http://celltypes.brain-map.org/) via the pynwb/legacy module.
+[PyNWB](https://pynwb.readthedocs.io/en/stable/) is the Python reference read/write API for the current NWB 2.x format. [api-python](https://neurodatawithoutborders.github.io/api-python/build/html/api_usage.html) is a deprecated write-only API designed for NWB:N 1.0.x files. [PyNWB](https://pynwb.readthedocs.io/en/stable/) also provides support for reading some NWB:N 1.0.x files from popular data repositories, such as the [Allen Cell Types Atlas](https://celltypes.brain-map.org/) via the pynwb/legacy module.

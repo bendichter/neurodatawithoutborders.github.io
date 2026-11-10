@@ -158,7 +158,7 @@ Once you've tested your changes, create a pull request on GitHub with a clear ti
 If you have questions or need assistance during the development process:
 
 - Visit the [NWB Help Desk](https://github.com/NeurodataWithoutBorders/helpdesk/discussions)
-- Join the [NWB Slack workspace](https://nwb-users.slack.com/)
+- Join the [NWB Slack workspace](/slack/)
 - Contact us through the [Contact Us](/contact-us/) page
 
 We look forward to adding your tool to the growing NWB software ecosystem!

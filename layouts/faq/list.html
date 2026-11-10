@@ -27,6 +27,20 @@
         </div>
         
         <script src="/js/toc.js"></script>
+
+        {{/* FAQPage structured data, built from the ### questions in content/faq/_index.md */}}
+        {{- $questions := slice -}}
+        {{- range after 1 (split .Content "<h3") -}}
+          {{- $pieces := split . "</h3>" -}}
+          {{- if ge (len $pieces) 2 -}}
+            {{- $q := index $pieces 0 | replaceRE `^[^>]*>` "" | plainify | htmlUnescape -}}
+            {{- $a := index (split (index $pieces 1) "<h2") 0 | plainify | htmlUnescape | replaceRE `\s+` " " -}}
+            {{- $questions = $questions | append (dict "@type" "Question" "name" $q "acceptedAnswer" (dict "@type" "Answer" "text" $a)) -}}
+          {{- end -}}
+        {{- end -}}
+        {{- with $questions }}
+        <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" . | jsonify | safeJS }}</script>
+        {{- end }}
     </div>
 </section>
 {{ end }}

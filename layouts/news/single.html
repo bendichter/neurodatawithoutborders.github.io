@@ -31,8 +31,7 @@
         <div class="row justify-content-between">
             <div class="col-lg-9">
                 <div>
-                    <img src="{{ .Params.image }}" alt="" class="rounded-top-3"
-                        style="width: 100% !important; height: auto !important;">
+                    {{ partial "essentials/img.html" (dict "src" .Params.image "widths" (slice 960 1600) "sizes" "(min-width: 992px) 75vw, 100vw" "class" "rounded-top-3" "lazy" false "style" "width: 100% !important; height: auto !important;") }}
                 </div>
                 <div class="mt-4 bg-white px-5 py-2">
                     <div class="d-flex flex-column flex-sm-row gap-3">
@@ -147,14 +146,12 @@
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
                                 <div class="flex-shrink-0">
-                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt=""
-                                        class="rounded-3"
-                                        style="width: 120px; height: 75px; object-fit: cover;">
+                                    {{ partial "essentials/img.html" (dict "src" .Params.image "widths" (slice 240) "pagefind" true "class" "rounded-3" "style" "width: 120px; height: 75px; object-fit: cover;") }}
                                 </div>
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">
                                         <div>
-                                            <img src="/images/essentials/calender.png" alt="calender" width="17">
+                                            <img src="/images/essentials/calender.png" alt="" aria-hidden="true" width="17">
                                         </div>
                                         <p class="inter-400 text-12 dark-600 mb-0 pt-1" data-pagefind-meta="date">{{
                                             .Date | time.Format "January 02, 2006 "}}</p>

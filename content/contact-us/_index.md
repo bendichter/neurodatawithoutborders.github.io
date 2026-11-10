@@ -15,7 +15,7 @@ community_section:
       title: NWB Slack Workspace
       content: Join the open Slack workspace to interact directly with the developers
         and other users.
-      url: "https://nwb-users.slack.com/join/shared_invite/zt-9bsx3xdj-wtUILLNzM8a0mOV_RywS~Q#/shared-invite/email"
+      url: "/slack/"
     - image: /images/contact-github.png
       title: NWB GitHub
       content: Contribute to our open source repositories on GitHub.

@@ -30,7 +30,7 @@ aliases:
 
 ## Overview
 
-[The DANDI Archive](http://dandiarchive.org) now has 300+ neurophysiology datasets in the [Neurodata Without Borders](http://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include datasets from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world.
+[The DANDI Archive](https://dandiarchive.org) now has 300+ neurophysiology datasets in the [Neurodata Without Borders](https://nwb.org) format spanning many species, brain areas, task types, and imaging modalities. These include datasets from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world.
 
 The Open Neurodata and Tools Showcase is a free virtual event in Gather where attendees can meet data contributors and tool developers, explore publicly available neurophysiology datasets in DANDI, and discover open-source tools integrated with the NWB ecosystem. This event provides an opportunity to connect with both dataset creators and tool developers to discuss their work, including open research questions and potential applications.
 

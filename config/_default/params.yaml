@@ -1,3 +1,16 @@
+# Site description, used for search results and link previews when a page
+# has no description, subtitle or summary of its own.
+description: "Neurodata Without Borders (NWB) is an open data standard and software ecosystem for sharing, archiving and analyzing neurophysiology and behavioral data."
+
+# Default link-preview image (1200x630). Pages with an `image` param use that instead.
+og_image: "/images/nwb-share-card.png"
+
+# Official profiles, listed in the Organization structured data.
+social_profiles:
+  - "https://github.com/NeurodataWithoutBorders"
+  - "https://www.youtube.com/@NeurodataWithoutBorders"
+  - "https://bsky.app/profile/nwb.org"
+
 # Header
 logo: "/images/logo.png"
 cta:
@@ -7,4 +20,51 @@ cta:
 
 # Footer
 footer_logo: "/images/colored-logo.png"
-copyright_text: "© Neurodata Without Borders - All Rights Reserved"
+copyright_text: "Neurodata Without Borders"
+
+# Source repository, used for "Edit this page on GitHub" links.
+repo_url: "https://github.com/NeurodataWithoutBorders/neurodatawithoutborders.github.io"
+
+# Newsletter (Mailchimp audience "Neurodata Without Borders").
+# form_action + honeypot come from Mailchimp's classic embedded form
+# (Audience > Signup forms > Embedded forms). Clear form_action to fall back
+# to a button linking to signup_url.
+newsletter:
+  signup_url: "https://mailchi.mp/fe2a9bc55a1a/nwb-signup"
+  form_action: "https://gmail.us3.list-manage.com/subscribe/post?u=eacaccc485a4e5f36034bbdbd&id=a9718ab27f"
+  honeypot: "b_eacaccc485a4e5f36034bbdbd_a9718ab27f"
+  button_text: "Subscribe"
+
+# Footer icon links. `icon` is a Bootstrap Icons name, or "bluesky".
+social:
+  - name: "GitHub"
+    icon: "github"
+    url: "https://github.com/NeurodataWithoutBorders"
+  - name: "YouTube"
+    icon: "youtube"
+    url: "https://www.youtube.com/@NeurodataWithoutBorders"
+  - name: "Bluesky"
+    icon: "bluesky"
+    url: "https://bsky.app/profile/nwb.org"
+  - name: "Slack"
+    icon: "slack"
+    url: "/slack/"
+  - name: "Help desk"
+    icon: "question-circle"
+    url: "https://github.com/NeurodataWithoutBorders/helpdesk/discussions"
+  - name: "News RSS feed"
+    icon: "rss-fill"
+    url: "/index.xml"
+
+# Analytics (cookieless, no consent banner needed). Leave `provider` empty to
+# disable. Scripts are only included in production builds.
+#   provider: "plausible"    -> set plausible_domain (and plausible_host if self-hosted)
+#   provider: "goatcounter"  -> set goatcounter_code (the <code>.goatcounter.com subdomain)
+analytics:
+  provider: ""
+  plausible_domain: "nwb.org"
+  plausible_host: ""
+  goatcounter_code: ""
+  # Ownership verification tokens from Google Search Console / Bing Webmaster Tools.
+  google_site_verification: ""
+  bing_site_verification: ""

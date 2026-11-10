@@ -1,10 +1,10 @@
 <div class="position-relative">
     <div class="position-absolute w-100 h-100 overflow-hidden z-n1 bg-darken-main">
         <div class="position-absolute">
-            <img src="/images/essentials/footer-dots-t.png" alt="" class="w-50">
+            <img src="/images/essentials/footer-dots-t.png" alt="" aria-hidden="true" class="w-50">
         </div>
         <div class="position-absolute footer-dots">
-            <img src="/images/essentials/footer-dots.png" alt="" class="w-50">
+            <img src="/images/essentials/footer-dots.png" alt="" aria-hidden="true" class="w-50">
         </div>
     </div>
     <div class="container-lg footer-padi z-3">
@@ -13,11 +13,20 @@
                 <div class="d-flex flex-column row-gap-4">
                     {{ with site.Params.footer_logo }}
                     <a href="/">
-                        <img src="{{ . }}" alt="nwb-colored-log" class="w-75">
+                        <img src="{{ . }}" alt="Neurodata Without Borders home" class="w-75">
                     </a>
                     {{ end }}
+                    {{ partial "shared/social-links.html" . }}
+                    <div class="d-flex flex-column gap-2">
+                        <strong class="inter-500 text-16 dark-50">Get the NWB newsletter</strong>
+                        {{ partial "shared/newsletter-form.html" (dict "variant" "footer") }}
+                    </div>
                     {{ with site.Params.copyright_text }}
-                    <p class="inter-400 text-16 dark-300">{{ . }}</p>
+                    <p class="inter-400 text-14 dark-300 mb-0">&copy; {{ now.Year }} {{ . }}</p>
+                    {{ end }}
+                    {{ with $.File }}
+                    <a href="{{ site.Params.repo_url }}/edit/main/content/{{ .Path }}" target="_blank" rel="noopener"
+                        class="inter-400 text-14 dark-300 underline-hover"><i class="bi bi-pencil-square me-1" aria-hidden="true"></i>Edit this page on GitHub</a>
                     {{ end }}
                 </div>
             </div>

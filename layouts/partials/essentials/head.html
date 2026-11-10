@@ -6,17 +6,20 @@
 {{/*  Title  */}}
 <title>{{ if and .Title (not .IsHome) }}{{ .Title | plainify }} - {{ end }}{{ .Site.Title }}</title>
 
+{{/*  Description, canonical URL, link previews and structured data  */}}
+{{- partial "essentials/seo.html" . }}
+
 {{/*  Bootstrap Icons  */}}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-{{/*  Font Awesome  */}}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 {{/*  Swiper JS  */}}
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+
+{{/*  Analytics and search-engine verification (off unless configured)  */}}
+{{- partial "essentials/analytics.html" . }}
 
 {{/*  Favicon  */}}
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">

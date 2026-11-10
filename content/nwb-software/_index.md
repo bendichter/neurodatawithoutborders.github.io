@@ -118,6 +118,7 @@ sections:
       specification language. A new schema file will be published for each
       revision of the NWB format standard. Developers can use the schema to
       validate NWB files or create advanced APIs for NWB data. <br><br><a
-      href='http://nwb-schema.readthedocs.io/en/stable'>Data Standard Schema Documentation</a> <br><br> <a href='https://github.com/NeurodataWithoutBorders/nwb-schema'>
+      href='https://nwb-schema.readthedocs.io/en/stable'>Data Standard Schema Documentation</a> <br><br> <a href='https://github.com/NeurodataWithoutBorders/nwb-schema'>
       Sources (GitHub)</a>
+description: "An overview of the NWB software ecosystem: APIs for reading and writing NWB, conversion tools, validators, viewers and analysis tools."
 ---

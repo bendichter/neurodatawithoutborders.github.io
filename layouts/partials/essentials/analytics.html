@@ -1,0 +1,23 @@
+{{/*
+  Privacy-friendly analytics and search-engine verification.
+  Configured in config/_default/params.yaml under `analytics`. Nothing is
+  emitted unless a provider is set, and scripts are only added to production
+  builds (HUGO_ENVIRONMENT=production, as in .github/workflows/hugo.yml), so
+  local `hugo server` sessions and Netlify previews are not counted.
+*/}}
+{{- with site.Params.analytics -}}
+  {{- with .google_site_verification }}
+<meta name="google-site-verification" content="{{ . }}">
+  {{- end }}
+  {{- with .bing_site_verification }}
+<meta name="msvalidate.01" content="{{ . }}">
+  {{- end }}
+  {{- if hugo.IsProduction }}
+    {{- if eq .provider "plausible" }}
+      {{- $host := .plausible_host | default "https://plausible.io" }}
+<script defer data-domain="{{ .plausible_domain | default "nwb.org" }}" src="{{ $host }}/js/script.outbound-links.file-downloads.js"></script>
+    {{- else if eq .provider "goatcounter" }}
+<script data-goatcounter="https://{{ .goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    {{- end }}
+  {{- end }}
+{{- end -}}

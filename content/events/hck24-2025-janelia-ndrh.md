@@ -28,8 +28,8 @@ See the [NeuroDataReHack 2025 Report](https://drive.google.com/file/d/1ho5Ebao4k
 
 ## Objective
 
-[The DANDI Archive](http://dandiarchive.org) now has 300+ neurophysiology datasets in the 
-[Neurodata Without Borders](http://nwb.org) format spanning many species, brain areas, task types, and imaging 
+[The DANDI Archive](https://dandiarchive.org) now has 300+ neurophysiology datasets in the 
+[Neurodata Without Borders](https://nwb.org) format spanning many species, brain areas, task types, and imaging 
 modalities. These include high-value datasets, e.g. from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the 
 [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world. In this 
 workshop, we will teach attendees about the open neurophysiology datasets available on the DANDI Archive and train 
