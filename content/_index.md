@@ -10,6 +10,30 @@ hero_section:
 banner_section:
   enable: true
   title: "<a href='/supporting-nwb/' style='color: #664d03; font-weight: 600;'>Learn how you can support NWB</a>"
+audience_section:
+  enable: true
+  title: I want to…
+  items:
+    - icon: arrow-repeat
+      title: Convert my lab's data
+      text: Turn recordings, behavior and metadata into NWB files with NeuroConv and NWB GUIDE.
+      cta: Start converting
+      link: /convert/
+    - icon: search
+      title: Analyze public data
+      text: Find and stream NWB datasets from DANDI and other archives, then explore them in Python or MATLAB.
+      cta: Find datasets
+      link: /archives/
+    - icon: code-slash
+      title: Build a tool on NWB
+      text: Read and write NWB from Python, MATLAB or C++, and extend the standard for new data types.
+      cta: See the software
+      link: /nwb-software/
+    - icon: mortarboard
+      title: Teach with NWB
+      text: Use open datasets, notebooks and course materials to teach neurophysiology data analysis.
+      cta: Teaching resources
+      link: /community/educators/
 card_section:
   enable: true
   cards:

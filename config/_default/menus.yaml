@@ -1,64 +1,86 @@
 # Main Navigation
+# Four groups by what a visitor wants to do. External links get an icon
+# automatically (see layouts/partials/shared/header.html).
 main:
-  # Get Started
-  - name: "Get Started"
+  # Learn
+  - name: "Learn"
     weight: 1
     hasChildren: true
   - name: "About NWB"
     weight: 1
     url: "about-nwb/"
-    parent: "Get Started"
-  - name: "Converting Data to NWB"
-    weight: 2
-    url: "convert/"
-    parent: "Get Started"
+    parent: "Learn"
   - name: "Documentation"
-    weight: 3
+    weight: 2
     url: "https://nwb-overview.readthedocs.io"
-    parent: "Get Started"
-  
+    parent: "Learn"
+  - name: "Training & Event Materials"
+    weight: 3
+    url: "training-materials/"
+    parent: "Learn"
+  - name: "Online Resources"
+    weight: 4
+    url: "online-resources/"
+    parent: "Learn"
+  - name: "Publications"
+    weight: 5
+    url: "publications/"
+    parent: "Learn"
+  - name: "FAQ"
+    weight: 6
+    url: "faq/"
+    parent: "Learn"
+
+  # Use NWB
+  - name: "Use NWB"
+    weight: 2
+    hasChildren: true
+  - name: "Convert Data to NWB"
+    weight: 1
+    url: "convert/"
+    parent: "Use NWB"
+  - name: "Find NWB Data (Archives)"
+    weight: 2
+    url: "archives/"
+    parent: "Use NWB"
+  - name: "Software Ecosystem"
+    weight: 3
+    url: "nwb-software/"
+    parent: "Use NWB"
+  - name: "Core Tools"
+    weight: 4
+    url: "tools/core/"
+    parent: "Use NWB"
+  - name: "Community Tools"
+    weight: 5
+    url: "tools/community/"
+    parent: "Use NWB"
+
   # The Standard
   - name: "The Standard"
-    weight: 2
+    weight: 3
     hasChildren: true
   - name: "Specification"
     weight: 1
     url: "https://nwb-schema.readthedocs.io/en/latest/format.html"
     parent: "The Standard"
-  - name: "Policies"
-    weight: 2
-    url: "policies/"
-    parent: "The Standard"
-  - name: "Enhancement Proposals"
-    weight: 3
-    url: "enhancement-proposals/"
-    parent: "The Standard"
   - name: "Extensions (NDX Catalog)"
-    weight: 4
+    weight: 2
     url: "https://nwb-extensions.github.io"
     parent: "The Standard"
-  
-  # Tools & Archives
-  - name: "Tools & Archives"
+  - name: "Extending NWB"
     weight: 3
-    hasChildren: true
-  - name: "NWB Software Ecosystem"
-    weight: 1
-    url: "nwb-software/"
-    parent: "Tools & Archives"
-  - name: "Core Tools"
-    weight: 2
-    url: "tools/core/"
-    parent: "Tools & Archives"
-  - name: "Community Tools"
-    weight: 3
-    url: "tools/community/"
-    parent: "Tools & Archives"
-  - name: "Data Archives"
+    url: "extending-nwb/"
+    parent: "The Standard"
+  - name: "Enhancement Proposals"
     weight: 4
-    url: "archives/"
-    parent: "Tools & Archives"
-  
+    url: "enhancement-proposals/"
+    parent: "The Standard"
+  - name: "Policies"
+    weight: 5
+    url: "policies/"
+    parent: "The Standard"
+
   # Community
   - name: "Community"
     weight: 4
@@ -75,21 +97,21 @@ main:
     weight: 3
     url: "community/gallery/"
     parent: "Community"
-  - name: "Organizing NWB Events"
+  - name: "Working Groups"
     weight: 4
+    url: "working-groups/"
+    parent: "Community"
+  - name: "Organizing NWB Events"
+    weight: 5
     url: "organizing-nwb-events/"
     parent: "Community"
   - name: "Teaching with NWB"
-    weight: 5
+    weight: 6
     url: "community/educators/"
     parent: "Community"
-  - name: "Extending NWB"
-    weight: 6
-    url: "extending-nwb/"
-    parent: "Community"
-  - name: "Working Groups"
+  - name: "Grants & Projects"
     weight: 7
-    url: "working-groups/"
+    url: "grants-and-projects/"
     parent: "Community"
   - name: "Supporting NWB"
     weight: 8
@@ -99,40 +121,14 @@ main:
     weight: 9
     url: "team/"
     parent: "Community"
-  
-  # Resources
-  - name: "Resources"
-    weight: 5
-    hasChildren: true
-  - name: "Publications"
-    weight: 1
-    url: "publications/"
-    parent: "Resources"
-  - name: "Online Resources"
-    weight: 2
-    url: "online-resources/"
-    parent: "Resources"
-  - name: "Grants & Projects"
-    weight: 3
-    url: "grants-and-projects/"
-    parent: "Resources"
-  - name: "Training & Event Materials"
-    weight: 4
-    url: "training-materials/"
-    parent: "Resources"
-  - name: "FAQ"
-    weight: 5
-    url: "faq/"
-    parent: "Resources"
   - name: "Branding & Logos"
-    weight: 7
+    weight: 10
     url: "branding/"
-    parent: "Resources"
-  
-  # Contact
+    parent: "Community"
   - name: "Contact"
-    weight: 6
+    weight: 11
     url: "contact-us/"
+    parent: "Community"
 
 # Footer
 # Footer Menus
