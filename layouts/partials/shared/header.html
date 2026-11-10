@@ -69,6 +69,10 @@
                               {{ .URL | relLangURL }}
                             {{ end }}">
                             {{ .Name }}
+                            {{ if findRE `^http` .URL }}
+                              <i class="bi bi-box-arrow-up-right ms-1 small opacity-75" aria-hidden="true"></i>
+                              <span class="visually-hidden">(opens in a new tab)</span>
+                            {{ end }}
                           </a>
                         </li>
                       {{ end }}
@@ -108,6 +112,10 @@
                               {{ .URL | relLangURL }}
                             {{ end }}">
                             {{ .Name }}
+                            {{ if findRE `^http` .URL }}
+                              <i class="bi bi-box-arrow-up-right ms-1 small opacity-75" aria-hidden="true"></i>
+                              <span class="visually-hidden">(opens in a new tab)</span>
+                            {{ end }}
                           </a>
                         </li>
                       {{ end }}
