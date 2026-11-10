@@ -28,7 +28,7 @@ card_section:
     - image: /images/mail.png
       title: Join Our Mailing List
       btn_text: Sign Up
-      btn_link: "https://mailchi.mp/fe2a9bc55a1a/nwb-signup"
+      btn_link: "#newsletter"
 portfolio_section:
   enable: true
   image: /images/ai_img.jpg
@@ -73,7 +73,7 @@ sponsers_section:
       link: "https://www.incf.org/"
 cta_section:
   enable: true
-  heading: Join our mailing list to receive news and notices
-  btn_text: Register
+  heading: Get NWB news, releases and events in your inbox
+  btn_text: Subscribe
   btn_link: "https://mailchi.mp/fe2a9bc55a1a/nwb-signup"
 ---
