@@ -223,16 +223,14 @@
 {{/* CTA */}}
 {{ with .Params.cta_section }}
 {{ if .enable }}
-<section class="ctaSect w-100 py-5">
+<section class="ctaSect w-100 py-5" id="newsletter">
   <div class="container-lg">
     <div class="row row-gap-4 text-center text-sm-start">
       <div class="col-sm-6">
         <p class="inter-700 text-40 text-white">{{ .heading | markdownify }}</p>
       </div>
       <div class="col-sm-6 justify-content-sm-end justify-content-center d-flex align-items-center">
-        <a href="{{ .btn_link }}"
-          class="btn btn-main bg-second btn-lg px-4 text-white text-18 second border-second translate animate">{{
-          .btn_text }}</a>
+        {{ partial "shared/newsletter-form.html" (dict "variant" "cta") }}
       </div>
     </div>
   </div>
