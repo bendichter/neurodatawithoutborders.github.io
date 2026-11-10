@@ -1,3 +1,16 @@
+# Site description, used for search results and link previews when a page
+# has no description, subtitle or summary of its own.
+description: "Neurodata Without Borders (NWB) is an open data standard and software ecosystem for sharing, archiving and analyzing neurophysiology and behavioral data."
+
+# Default link-preview image (1200x630). Pages with an `image` param use that instead.
+og_image: "/images/nwb-share-card.png"
+
+# Official profiles, listed in the Organization structured data.
+social_profiles:
+  - "https://github.com/NeurodataWithoutBorders"
+  - "https://www.youtube.com/@NeurodataWithoutBorders"
+  - "https://bsky.app/profile/nwb.org"
+
 # Header
 logo: "/images/logo.png"
 cta:

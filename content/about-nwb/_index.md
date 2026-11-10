@@ -151,4 +151,5 @@ history_section:
     
     As the community continues to grow, NWB remains under active development, with regular releases addressing new use cases, experimental modalities, and integration with emerging technologies in neuroscience research. Join us at our [upcoming events](/events/) to learn more and contribute to the project."
     - wide_image: /images/history.png
+description: "What Neurodata Without Borders is, who builds it, and how the NWB data standard helps neuroscientists share, archive and reuse neurophysiology data."
 ---

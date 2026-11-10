@@ -120,4 +120,5 @@ sections:
       validate NWB files or create advanced APIs for NWB data. <br><br><a
       href='http://nwb-schema.readthedocs.io/en/stable'>Data Standard Schema Documentation</a> <br><br> <a href='https://github.com/NeurodataWithoutBorders/nwb-schema'>
       Sources (GitHub)</a>
+description: "An overview of the NWB software ecosystem: APIs for reading and writing NWB, conversion tools, validators, viewers and analysis tools."
 ---
