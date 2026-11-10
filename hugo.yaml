@@ -20,6 +20,19 @@ markup:
     lineNos: false
     noClasses: false
 
+# Output formats: /llms.txt is a plain-text guide for AI assistants
+# (https://llmstxt.org), rendered from layouts/index.llms.txt.
+outputFormats:
+  llms:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    notAlternative: true
+    rel: alternate
+
+outputs:
+  home: [html, rss, llms]
+
 # Modules
 module:
   mounts:

@@ -1,4 +1,7 @@
+# nwb.org is open documentation for an open standard. Search engines and AI
+# crawlers are welcome to index it; /llms.txt is a curated entry point.
 User-agent: *
 Disallow:
 
 Sitemap: {{ "sitemap.xml" | absURL }}
+# AI guide: {{ "llms.txt" | absURL }}
