@@ -162,4 +162,5 @@ dev_community_section:
     to our various software are available on our NWB GitHub Organization and the
     different GitHub repositories: NWB Schema, PyNWB, MatNWB, HDMF among many
     others."
+description: "The scientists and software engineers who develop and maintain the Neurodata Without Borders standard and software."
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 weight: 5
+description: "Answers to common questions about using NWB: stability, getting started, citing NWB, extensions, and how NWB compares to other standards."
 ---
 
 ## Using NWB
