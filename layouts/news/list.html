@@ -43,7 +43,7 @@
                     {{ range $paginator.Pages }}
                     <div class="col-sm-8 col-md-6 mx-auto">
                         <div class="rounded-top-3 shadow-sm overflow-hidden">
-                            <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt="" style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
+                            {{ partial "essentials/img.html" (dict "src" .Params.image "widths" (slice 480 960) "sizes" "(min-width: 992px) 33vw, 100vw" "pagefind" true "style" "width: 100% !important; height: 240px !important; object-fit: cover !important;") }}
                         </div>
                         <div class="p-4 bg-white d-flex flex-column gap-3 rounded-bottom-3 shadow-sm">
                             {{ with .Date }}
@@ -119,9 +119,7 @@
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
                                 <div class="flex-shrink-0">
-                                    <img src="{{ .Params.image }}" alt=""
-                                        class="rounded-3"
-                                        style="width: 120px; height: 75px; object-fit: cover;">
+                                    {{ partial "essentials/img.html" (dict "src" .Params.image "widths" (slice 240) "class" "rounded-3" "style" "width: 120px; height: 75px; object-fit: cover;") }}
                                 </div>
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">

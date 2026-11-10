@@ -1,0 +1,50 @@
+{{/*
+  Responsive image. Local images under static/images are also mounted as
+  assets (see hugo.yaml), so they can be resized to WebP at build time.
+  Remote URLs, SVGs and GIFs are passed through unchanged.
+
+  Usage:
+    {{ partial "essentials/img.html" (dict
+         "src" "/images/foo.png"     required
+         "widths" (slice 480 960)    output widths in px (default 480 960)
+         "sizes" "(min-width: 768px) 33vw, 100vw"
+         "alt" ""  "class" ""  "style" ""
+         "lazy" true                 default true; use false above the fold
+         "pagefind" true             adds data-pagefind-meta="image[src]"
+    ) }}
+*/}}
+{{- $src := .src -}}
+{{- $widths := .widths | default (slice 480 960) -}}
+{{- $lazy := true -}}{{- if eq .lazy false -}}{{- $lazy = false -}}{{- end -}}
+{{- $res := "" -}}
+{{- if and $src (not (findRE `^https?://` $src)) -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $src) -}}
+    {{- if in (slice "png" "jpg" "jpeg" "webp") .MediaType.SubType -}}
+      {{- $res = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $res -}}
+  {{- $set := slice -}}
+  {{- $last := "" -}}
+  {{- range $widths -}}
+    {{- $w := cond (gt . $res.Width) $res.Width . -}}
+    {{- $r := $res.Resize (printf "%dx webp q80" $w) -}}
+    {{- $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+    {{- $last = $r -}}
+  {{- end -}}
+<img src="{{ $last.RelPermalink }}" srcset="{{ delimit (uniq $set) ", " }}"
+  {{- with .sizes }} sizes="{{ . }}"{{ end }}
+  width="{{ $last.Width }}" height="{{ $last.Height }}"
+  alt="{{ .alt | default "" }}"
+  {{- with .class }} class="{{ . }}"{{ end }}
+  {{- with .style }} style="{{ . | safeCSS }}"{{ end }}
+  {{- if .pagefind }} data-pagefind-meta="image[src]"{{ end }}
+  {{- if $lazy }} loading="lazy"{{ end }} decoding="async">
+{{- else -}}
+<img src="{{ $src }}" alt="{{ .alt | default "" }}"
+  {{- with .class }} class="{{ . }}"{{ end }}
+  {{- with .style }} style="{{ . | safeCSS }}"{{ end }}
+  {{- if .pagefind }} data-pagefind-meta="image[src]"{{ end }}
+  {{- if $lazy }} loading="lazy"{{ end }} decoding="async">
+{{- end -}}

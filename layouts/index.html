@@ -20,7 +20,7 @@
         {{ range .slides }}
         <div class="swiper-slide d-md-flex flex-md-row-reverse align-items-md-center ms-md-3 mx-auto">
           <div class="heroImg col-md-7 mb-sm-5 mb-md-0 px-0 ms-3 ms-sm-5 ms-md-0 d-flex justify-content-center align-items-center">
-            <img src="/images/hero.png" alt="nwb-home" class="img-fluid">
+            {{ partial "essentials/img.html" (dict "src" "/images/hero.png" "widths" (slice 612) "class" "img-fluid" "lazy" false) }}
           </div>
           <div class="col-11 col-sm-8 col-md-5 z-2 d-md-flex flex-column gap-3 mx-auto mx-md-0 text-center text-md-start px-md-0 mx-md-0">
             <h1 class="inter-700 text-white text-48-responsive">{{ .title | markdownify }}</h1>
@@ -154,7 +154,7 @@
       <div class="swiper-slide">
         <div class="shadow">
           <div class="shadow-sm">
-            <img src="{{ .Params.image }}" alt="" class="rounded-top-3" style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
+            {{ partial "essentials/img.html" (dict "src" .Params.image "widths" (slice 480 960) "sizes" "(min-width: 768px) 33vw, (min-width: 576px) 50vw, 100vw" "class" "rounded-top-3" "style" "width: 100% !important; height: 240px !important; object-fit: cover !important;") }}
         </div>
           <div class="h-40 p-4 bg-main rounded-bottom-3 d-flex flex-column gap-3">
             <div class="d-flex gap-2 align-items-center">
